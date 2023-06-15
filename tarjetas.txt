@@ -1,4 +1,0 @@
-MASTERCARD
-visa
-amex
-rapipago
