@@ -1,0 +1,31 @@
+/*
+    NO
+    -sasss
+    -less
+    -scss
+*/
+/*Selector universal*/
+
+* {
+    font-family: 'ubuntu', sans-serif;
+}
+
+/*regla css*/
+body {
+    background-color: green;
+}
+p {
+    color: white;
+    /*tamaño de fuente*/
+    font-size: 32px;
+}
+/*Selector por ID*/
+#miparrafo {
+    color: aqua;
+}
+/*Selector por clase*/
+.miparrafo {
+    color:red;
+}
+
+/*Inline > ID > Etiqueta > Class*/

@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,500;0,700;1,300;1,700&display=swap');
+
+
+ 
+:root {
+    --cuadrado: 400px;
+    --alto-cuadrado: 250px;
+    --circulo: 200px;
+    --fuente-principal:'Ubuntu';
+    --primary-color:rgb(6, 126, 6);
+    --secondary-color:rgba(88, 139, 88, 0.938);
+    --tertiary-color:rgb(43, 103, 114);
+    --white:#ffffff;
+
+    /*Buttons*/
+    --button-border-default:30px;
+    --button-default-widht:70px;
+    --button-default-height:25px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fuente-principal);
+}
+
+.profile-container {
+    margin: 0 auto;
+    width: var(--cuadrado);
+}
+
+.container {
+    width: var(--cuadrado);
+    height: var(--alto-cuadrado);
+    /*background-color: blue;*/
+    position: relative;
+    border: 1px dotted lightblue;
+    border-radius: 10px;
+    margin: 1vh;
+}
+
+.container h1 {
+    color: var(--primary-color);
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+.container h3 {
+    color: var(--secondary-color);
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+.container p {
+    color: var(--tertiary-color);
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+.circulo {
+    width: var(--circulo);
+    height: var(--circulo);
+    border-radius: 50%;
+    background-color: rgb(22, 211, 117);
+    position: absolute;
+    right: 20px;
+    top: calc(var(--alto-cuadrado) - var(--circulo) / 2);
+
+    /*Imagen de fondo*/
+    background-image:url(https://i.redd.it/yodvogu2u8161.png);
+    background-size: contain; 
+}
+
+.profile-img {
+    width: inherit; /*Hereda el valor del contenedor*/
+    height: inherit;
+    border-radius: 50%;
+}
+
+.btn {
+    border-radius: var(--button-border-default);
+    width: var(--button-default-widht);
+    height: var(--button-default-height);
+    border: none;
+    margin: 1vh 1vh;
+    font-size: .6rem;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color: var(--white);
+}

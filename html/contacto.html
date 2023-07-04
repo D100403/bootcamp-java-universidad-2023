@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Mundial Qatar - 2022</h1>
+    </header>
+    <nav>
+        <!--Lista no ordenada-->
+        <ul>
+            <li>
+                <a href="#equipos">Equipos</a>
+            </li>
+            <li>
+                <a href="#grupos">Grupos</a>
+            </li>
+        </ul>
+    </nav>
+    <!--Etiqueta semantica main: html5-->
+    <!--Contenido ppal-->
+    <main>
+        <section>
+            <h3>Equipos</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur</p>
+        </section>
+        <section>
+            <h3>Grupos</h3>
+            <table>
+                <tr>
+                    <th>A</th>
+                </tr>
+                <tr>
+                    <td>
+                        <span>Portugal</span>
+                    </td>
+                <tr>
+                    <td>
+                        <span>Serbia</span>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <!--Formularios-->
+    <!--los datos viajan por defecto por GET-->
+    <fieldset>
+        <legend>Datos de Contacto</legend>
+        <form method="get">
+            <!--Input varios tipo-->
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text"
+                    name="nombre"
+                    id="nombre"
+                    >
+            </div>
+            <!--number-->
+            <div>
+                <label for="edad">Edad:</label>
+                <input type="number"
+                    id="edad"
+                    name="edad"
+                    min="0"
+                    max="99"
+                    placeholder="11-">
+                </div>
+            <div>
+                <label for="obrasocial">
+                    Obra social:
+                </label>
+                <!--Es posible tildar varios usando el atributo multiple-->
+                <select name="obrasocial" required>
+                    <option></option>
+                    <option value="PAM">PAMI</option>
+                    <option value="osde">OSDE</option>
+                    <option value="swmec">SWISH MEDICAL</option>
+                </select>
+            </div>
+            
+            <div>      
+                <label>
+                    Es cliente:
+                </label>
+                <label for="si">Sí</label>
+                <input type="radio" 
+                    name="escliente" 
+                    id="si">
+                
+                <label for="no">No</label>
+                <input type="radio" 
+                    name="escliente" 
+                    id="no">
+            </div>
+            
+            <div>
+                <label>
+                    Intereses:
+                </label>
+                
+                <input type="checkbox"
+                name="musica"
+                id="musica"
+                value="MUS">
+                <label for="musica">
+                    Música
+                </label>
+                
+                <input type="checkbox"
+                name="deportes"
+                value="depo"
+                id="deportes">
+                <label for="deportes" 
+                name="deportes">
+                    Deportes
+                </label>
+
+            </div>
+
+            <div>
+                <label>Fecha:</label>
+                <input type="date">
+            </div>
+
+            <div>
+                <label>Horario:</label>
+                <input type="time">
+            </div>
+
+            <div>
+                <label>Avatar:</label>
+                <input type="file">
+            </div> 
+
+            <div>
+                <label>Username:</label>
+                <input type="text" name="username">
+            </div>
+            <div>
+                <label>Contraseña:</label>
+                <input type="password" name="password">
+            </div>
+
+            <!--range-->
+            <!--email-->
+            <!--password-->
+
+            <input type="hidden" name="oculto" value="voculto">
+            <div>
+                <button>
+                    Enviar
+                </button>
+            </div>
+        </form>
+    </fieldset>
+    <aside>
+        <iframe width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/ZiYr777GSjk" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen></iframe>
+        <video src="../assets/movie.mp4" controls></video>
+        <audio src="../assets/horse.ogv" controls></audio>
+    </aside>
+    <footer>
+        <a href="./index.html">Volver</a>
+    </footer>
+</body>
+</html>
