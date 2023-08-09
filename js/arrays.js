@@ -1,5 +1,5 @@
 /*1- crear un array */
-//                 0   1 
+/*//                 0   1 
 const vector = ['casa','perro'];
 
 //tamaño
@@ -21,31 +21,49 @@ for (let piso = 0; piso < vector.length; piso++) {
 Ingresar datos de un alumno:
     - nombre
     - apellido
-    - dni
+    - dni 
     - curso
+    - edad
 La carga finaliza con dni=0
-----------------------------
+Calcular el promedio de edad de los alumnos
+---------------------------
 Necesito un objeto alumnos
-*/
-const alumnos = [];
-let nombre, apellido, dni, curso;
 
-dni = Number(prompt("DNI"));
-while (dni !== 0){ //Corte de control
+*/
+/*const alumnos = [];
+let nombre,apellido,dni,curso,edad;
+debugger;
+dni = Number(prompt("DNI")); //100
+while(dni !== 0) { //corte de control!
     nombre = prompt("Nombre");
     apellido = prompt("Apellido");
-    curso = prompt("curso");
+    curso = prompt("Curso");
+    edad = Number(prompt("Edad"));
 
-    //Creo mi objeto alumno
+    //creo mi objeto alumno
     const alumno = {
         dni,
         nombre,
         apellido,
-        curso
-    }
+        curso,
+        edad
+    };
 
-    // Agregar el alumno al vecto de alumnos
+    //agregar el alumno al vector de alumnos
     alumnos.push(alumno);
 
-    //
+    dni = Number(prompt("DNI")); //100
+}
+
+//mostrar los datos del vector de alumnos!
+//recorro el vector
+/*let suma = 0;
+for (let index = 0; index < alumnos.length; index++) {
+    const alumno = alumnos[index];
+    suma+=alumno.edad;
+}
+console.log(suma/alumnos.length);
+*/
+function add(){
+    alert('Mi primer evento v3');
 }
