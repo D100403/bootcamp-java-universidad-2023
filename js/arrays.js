@@ -30,7 +30,7 @@ Calcular el promedio de edad de los alumnos
 Necesito un objeto alumnos
 
 */
-/*const alumnos = [];
+const alumnos = [];
 let nombre,apellido,dni,curso,edad;
 debugger;
 dni = Number(prompt("DNI")); //100
@@ -57,13 +57,13 @@ while(dni !== 0) { //corte de control!
 
 //mostrar los datos del vector de alumnos!
 //recorro el vector
-/*let suma = 0;
+let suma = 0;
 for (let index = 0; index < alumnos.length; index++) {
     const alumno = alumnos[index];
     suma+=alumno.edad;
 }
 console.log(suma/alumnos.length);
-*/
+
 function add(){
     alert('Mi primer evento v3');
 }
